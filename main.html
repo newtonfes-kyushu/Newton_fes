@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホームページのひな型</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- ナビゲーションバー -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-lg font-bold text-gray-800">
+                My Website
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">ホーム</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">サービス</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <header class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">ようこそ私たちのウェブサイトへ</h1>
+            <p class="mt-4 text-lg">私たちは最高のサービスを提供します。</p>
+            <a href="#" class="mt-6 inline-block bg-white text-blue-500 px-4 py-2 rounded shadow">詳細を見る</a>
+        </div>
+    </header>
+
+    <!-- コンテンツセクション -->
+    <main class="container mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold mb-4">私たちのサービス</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold">サービス 1</h3>
+                <p class="mt-2 text-gray-600">サービス 1の説明がここに入ります。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold">サービス 2</h3>
+                <p class="mt-2 text-gray-600">サービス 2の説明がここに入ります。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold">サービス 3</h3>
+                <p class="mt-2 text-gray-600">サービス 3の説明がここに入ります。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
