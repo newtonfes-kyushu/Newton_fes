@@ -683,6 +683,10 @@ video {
   background-image: url('/img/W1camp.jpg');
 }
 
+.bg-\[url\(\'https\:\/\/github\.com\/newtonfes2024\/Newton_fes_2024\/blob\/main\/DSC_4244_72\.jpg\?raw\=true\'\)\] {
+  background-image: url('https://github.com/newtonfes2024/Newton_fes_2024/blob/main/DSC_4244_72.jpg?raw=true');
+}
+
 .bg-cover {
   background-size: cover;
 }
