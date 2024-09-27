@@ -675,6 +675,14 @@ video {
   background-image: url('/DSC_4244_72.jpg');
 }
 
+.bg-\[url\(\'img\/W1camp\.jpg\'\)\] {
+  background-image: url('img/W1camp.jpg');
+}
+
+.bg-\[url\(\'\/img\/W1camp\.jpg\'\)\] {
+  background-image: url('/img/W1camp.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
