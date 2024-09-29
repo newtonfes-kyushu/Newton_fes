@@ -695,6 +695,10 @@ video {
   background-image: url('/img/W1capmp.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/W1camp\.jpg\'\)\] {
+  background-image: url('./img/W1camp.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
