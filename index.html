@@ -13,7 +13,6 @@
     <nav class="bg-burgundy shadow">
         <div class="container mx-auto px-1 py-0 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2">
-                <!-- 画像サイズを調整して、文字と横並びに配置 -->
                 <img src="dist/img/NewtonFes_icon.PNG" class="w-16 h-16 sm:w-20 sm:h-20">
                 <div class="text-base sm:text-xl font-bold text-white">
                     ニュートン祭2024
@@ -21,8 +20,8 @@
             </a>
             <div>
                 <ul class="flex space-x-2 sm:space-x-4 text-xs sm:text-lg">
-                    <li><a href="visit.html" class="text-white hover:text-blue-500">研究室訪問</a></li>
-                    <li><a href="recreation.html" class="text-white hover:text-blue-500">レク</a></li>
+                    <li><a href="https://www.instagram.com/newtonfes_2024?igsh=MWZqbmpsMGgzN282NA==" class="text-white hover:text-blue-500">SNS</a></li>
+                    <li><a href="recreation.html" class="text-white hover:text-blue-500">イベント</a></li>
                     <li><a href="panphlet.html" class="text-white hover:text-blue-500">研究室紹介</a></li>
                 </ul>
             </div>
@@ -38,25 +37,161 @@
         </div>
     </header>
 
-    <!-- コンテンツセクション -->
+    <!-- お知らせ -->
+    <div class="bg-white shadow-lg rounded-lg p-4 mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">お知らせ</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-3"></div>
+                <div>
+                    <a href="https://forms.gle/GUJnCcsRrTh1dfyCA" class="text-blue-600 font-medium hover:underline">
+                        懇親会参加者募集中！
+                    </a>
+                    <p class="text-sm">応募フォームは↑をクリック！</p>
+                </div>
+            </li>
+            <li class="flex items-start">
+                <div class="w-2 h-2 bg-green-500 rounded-full mt-1.5 mr-3"></div>
+                <div>
+                    <a href="https://forms.gle/gjrTfu6EbTPMRyfh7" class="text-blue-600 font-medium hover:underline">
+                        レクリエーション参加者募集中！
+                    </a>
+                    <p class="text-sm">応募フォームは↑をクリック！</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+    <!-- カレンダーセクション -->
     <main class="container mx-auto px-6 py-12">
-        <h2 class="text-white text-2xl font-bold mb-4">イベント</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-semibold">研究室訪問</h3>
-                <p class="mt-2">hogehoge</p>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <!-- カレンダーの曜日表示 -->
+            <h2 class="text-2xl font-bold mb-4">イベントカレンダー </h2>
+            <div class="grid grid-cols-7 text-center font-bold text-gray-600 mb-2">
+                <div>日</div>
+                <div>月</div>
+                <div>火</div>
+                <div>水</div>
+                <div>木</div>
+                <div>金</div>
+                <div>土</div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-semibold">レクリエーション</h3>
-                <p class="mt-2">hogehoge</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-xl font-semibold">食事会</h3>
-                <p class="mt-2">hogehoge</p>
+
+            <!-- カレンダーの日付 -->
+            <div class="grid grid-cols-7 gap-4 text-center">
+                <!-- 日付が始まる前の空白セル（12月1日が金曜日のため、4つ空白） -->
+
+                <!-- 12月の日付セル -->
+                <div class="bg-blue-50 p-2 rounded-lg"></div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>11/25</div>
+                    <div class="text-xs">凝縮系理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>26</div>
+                    <div class="text-xs">理論核</div>
+                    <div class="text-xs">磁性物理</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>27</div>
+                    <div class="text-xs">理論核</div>
+                    <div class="text-xs">物性理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>28</div>
+                    <div class="text-xs">創発量子</div>
+                    <div class="text-xs">光物性</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>29</div>
+                    <div class="text-xs">複雑物性</div>
+                    <div class="text-xs">複雑生命</div>
+                </div>
+                <div class="bg-blue-50 p-2 rounded-lg">30</div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>12/1</div>
+                    <a href="recreation.html" class="text-blue-500 text-xs underline">サッカー</a>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>2</div>
+                    <div class="text-xs">実験核</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>3</div>
+                    <div class="text-xs">素粒子実験</div>
+                    <div class="text-xs">素粒子理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>4</div>
+                    <div class="text-xs">素粒子実験</div>
+                    <div class="text-xs">固体電子</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>5</div>
+                    <div class="text-xs">複雑物性</div>
+                    <div class="text-xs">粒子系理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>6</div>
+                    <div class="text-xs">複雑生命</div>
+                    <div class="text-xs">素粒子理論</div>
+                </div>
+                
+
+                <!-- イベントがある日にはリンク付きでイベント名を表示 -->
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>7</div>
+                    <a href="recreation.html" class="text-blue-500 text-xs underline">ソフトボール</a>
+                </div>
+                <div class="bg-blue-50 p-2 rounded-lg">8</div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>9</div>
+                    <div class="text-xs">創発量子</div>
+                    <div class="text-xs">凝縮系理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>10</div>
+                    <div class="text-xs">実験核</div>
+                    <div class="text-xs">量子宇宙</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>11</div>
+                    <div class="text-xs">物性理論</div>
+                    <div class="text-xs">個体電子</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>12</div>
+                    <div class="text-xs">磁性物理</div>
+                    <div class="text-xs">粒子系理論</div>
+                </div>
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>13</div>
+                    <div class="text-xs">量子宇宙</div>
+                    <div class="text-xs">光物性</div>
+                </div>
+                <div class="bg-blue-50 p-2 rounded-lg">14</div>
+                <div class="bg-blue-50 p-2 rounded-lg">15</div>
+                <div class="bg-blue-50 p-2 rounded-lg">16</div>
+                <div class="bg-blue-50 p-2 rounded-lg">17</div>
+                <div class="bg-blue-50 p-2 rounded-lg">18</div>
+                <div class="bg-blue-50 p-2 rounded-lg">19</div>
+                
+                <!-- 12月25日のイベント -->
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                    <div>20</div>
+                    <a href="recreation.html" class="text-blue-500 text-xs underline">懇親会</a>
+                    <div class="text-xs">18:00~</div>
+                </div>
+
+                <!-- 残りの日付を追加 -->
+                <!-- 必要に応じて他の日付もイベント追加 -->
             </div>
         </div>
     </main>
     </div>
+
     <!-- フッター -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
@@ -66,3 +201,4 @@
 
 </body>
 </html>
+
