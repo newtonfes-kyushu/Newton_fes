@@ -786,6 +786,11 @@ video {
   line-height: 1rem;
 }
 
+.text-xxs {
+  font-size: 0.675rem;
+  line-height: 1rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
