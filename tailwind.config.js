@@ -10,7 +10,7 @@ module.exports = {
         burgundy: '#800000',
       },
       fontSize: {
-        'xxs': '0.675rem', // 10px
+        'xxs': '0.650rem', // 10px
       },
     },
   },  
