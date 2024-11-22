@@ -63,10 +63,69 @@
             </li>
         </ul>
     </div>
+
+    <div class="bg-white shadow-lg rounded-lg p-4 mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">本日の研究室訪問</h2>
+        <!-- メッセージを表示するための要素 -->
+        <p id="message" class="text-gray-700"></p>
+        <p>時間:16:50~18:10</p>
+    </div>
+    
+    <script>
+        // 日にちごとにメッセージを設定
+        function getMessageByDate() {
+            const today = new Date();
+            const day = today.getDate(); // 今日の日付（1～31）
+            let message;
+    
+            // 日にちに応じたメッセージを設定
+            if (day === 25) {
+                message = "凝縮系:W1-A-701　創発量子:W1-B-804";
+            } else if (day === 26) {
+                message = "理論核:W1-A-723物理セミナー室3　磁性物理:W1-D-315";
+            } else if (day === 27) {
+                message = "理論核:W1-A-723　物性物理:W1-B-714";
+            } else if (day === 28) {
+                message = "創発量子:W1-A-804　光物性:W1-A-722";
+            } else if (day === 29) {
+                message = "複雑物性:W1-A723　複雑生命:";
+            } else if (day === 2) {
+                message = "実験核:";
+            } else if (day === 3) {
+                message = "素粒子実験:　素粒子理論:W1-A-723物理セミナー室3";
+            } else if (day === 4) {
+                message = "素粒子実験:　固体電子:";
+            } else if (day === 5) {
+                message = "複雑物性:W1-A-723　粒子系理論:";
+            } else if (day === 6) {
+                message = "複雑生命:　素粒子理論:W1-A-723物理セミナー室3";
+            } else if (day === 9) {
+                message = "凝縮系:W1-A-701";
+            } else if (day === 10) {
+                message = "実験核:　量子宇宙:W1-A-722";
+            } else if (day === 11) {
+                message = "物性理論:W1-B-714　固体電子:";
+            } else if (day === 12) {
+                message = "磁性物理:W1-D-315　粒子系理論:";
+            } else if (day === 13) {
+                message = "量子宇宙:W1-A-722　光物性:W1-A-723";
+            } else {
+                message = "本日の研究室訪問はありません";
+            }
+    
+            return message;
+        }
+    
+        // メッセージを表示
+        document.getElementById("message").innerText = getMessageByDate();
+    </script>
+    
+ 
+
     
 
     <!-- カレンダーセクション -->
-    <main class="container mx-auto  py-12">
+    <main class="container mx-auto  py-1">
         
         <div class="bg-white rounded-lg shadow-lg py-4 sm:p-6">
             <!-- カレンダーの曜日表示 -->
@@ -90,6 +149,7 @@
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
                     <div class="text-sm sm:text-lg">11/25</div>
                     <div class="text-xxs sm:text-base">凝縮系理論</div>
+                    <div class="text-xxs sm:text-base">創発量子</div>
                 </div>
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
                     <div class="text-sm sm:text-lg">26</div>
@@ -150,7 +210,6 @@
                 <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">8</div>
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
                     <div class="text-sm sm:text-lg">9</div>
-                    <div class="text-xxs sm:text-base">創発量子</div>
                     <div class="text-xxs sm:text-base">凝縮系理論</div>
                 </div>
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
