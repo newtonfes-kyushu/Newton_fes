@@ -9,24 +9,12 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <!-- ナビゲーションバー -->
-    <nav class="bg-burgundy shadow">
-        <div class="container mx-auto px-1 py-0 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="dist/img/NewtonFes_icon.PNG" class="w-16 h-16 sm:w-20 sm:h-20">
-                <div class="text-base sm:text-xl font-bold text-white">
-                    ニュートン祭2024
-                </div>
-            </a>
-            <div>
-                <ul class="flex space-x-2 sm:space-x-4 text-xs sm:text-lg">
-                    <li><a href="https://www.instagram.com/newtonfes_2024?igsh=MWZqbmpsMGgzN282NA==" class="text-white hover:text-blue-500">SNS</a></li>
-                    <li><a href="recreation.html" class="text-white hover:text-blue-500">イベント</a></li>
-                    <li><a href="panphlet.html" class="text-white hover:text-blue-500">研究室紹介</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<script src="/include.js" defer></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- ナビゲーションを挿入 -->
+  <div id="navbar"></div>
     
     <div class="bg-[url('img/W1camp.jpg')] bg-cover bg-fixed bg-center">
     <!-- コンテンツ -->
@@ -67,12 +55,15 @@
     </main>
 </div>
 
-    <!-- フッター -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>2024 ニュートン祭実行委員会</p>
-        </div>
-    </footer>
+  <!-- フッターを挿入 -->
+  <div id="footer"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      includeHTML('navbar', '/nav.html');
+      includeHTML('footer', '/footer.html');
+    });
+  </script>
 
 </body>
 </html>
