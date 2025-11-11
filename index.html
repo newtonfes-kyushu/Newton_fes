@@ -109,7 +109,7 @@
         <div class="bg-white rounded-lg shadow-lg py-4 sm:p-6">
             <!-- カレンダーの曜日表示 -->
             <h2 class="text-2xl font-bold mb-4 ">イベントカレンダー </h2>
-            <div class="grid grid-cols-7 gap-0.5 sm:gap-1 text-center text-gray-800 text-sm sm:text-lg">
+            <div class="grid grid-cols-7 gap-0.5 sm:gap-1 text-center text-gray-800 text-sm sm:text-lg"><!-- gridで<div>を格子状に配置する、列数と中央揃えを指定 -->
                 <div>日</div>
                 <div>月</div>
                 <div>火</div>
@@ -119,112 +119,54 @@
                 <div>土</div>
             </div>
 
-            <!-- カレンダーの日付 -->
-            <div class="grid grid-cols-7 text-center"><!-- gridで<div>を格子状に配置する、列数と中央揃えを指定 -->
+            <!-- カレンダーの日付 --><!--デフォの文字の設定はtext-xxs sm:text-base text-blue-500 underline block-->
+        <div class="grid grid-cols-7 text-center gap-1"> 
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">11/16</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">17</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">18</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">19</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">20</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">21</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">22</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">23</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">24</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">25</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">26</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">27</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">28</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">29</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">30</div>
 
-                <!-- 以下日付セル、各研究室のパンフのリンクを貼る -->
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div><!-- p,smは余白の設定、デフォで良し-->
-                <!-- ↑こいつが空白のセル 空白のセルはbg-blue-50、内容が書いてあるセルはbg-yellow-100で背景色変えてください　-->
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">11/25</div><!-- smは文字のデフォの大きさ、sm:text-lgで画面幅に応じて文字を大きく-->
-                    <a href="dist/pdf/凝縮系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">凝縮系理論</a><!--blockで改行-->
-                    <a href="dist/pdf/創発量子.pdf" class="text-xxs sm:text-base text-blue-500 underline block">創発量子</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">26</div>
-                    <a href="dist/pdf/理論核.pdf" class="text-xxs sm:text-base text-blue-500 underline block">理論核</a>
-                    <a href="dist/pdf/磁性物理学.pdf" class="text-xxs sm:text-base text-blue-500 underline block">磁性物理</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">27</div>
-                    <a href="dist/pdf/理論核.pdf" class="text-xxs sm:text-base text-blue-500 underline block">理論核</a>
-                    <a href="dist/pdf/物性理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">物性理論</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">28</div>
-                    <a href="dist/pdf/創発量子.pdf" class="text-xxs sm:text-base text-blue-500 underline block">創発量子</a>
-                    <a href="dist/pdf/光物性.pdf" class="text-xxs sm:text-base text-blue-500 underline block">光物性</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">29</div>
-                    <a href="dist/pdf/複雑物性基礎.pdf" class="text-xxs sm:text-base text-blue-500 underline block">複雑物性</a>
-                    <a href="dist/pdf/複雑生命.pdf" class="text-xxs sm:text-base text-blue-500 underline block">複雑生命</a>
-                </div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">30</div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">12/1</div>
-                    <a href="recreation.html" class="text-blue-500 text-xxs sm:text-base underline">サッカー</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">2</div>
-                    <a href="" class="text-xxs sm:text-base text-blue-500 underline block">実験核</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">3</div>
-                    <a href="dist/pdf/素粒子実験.pdf" class="text-xxs sm:text-base text-blue-500 underline block">素粒子実験</a>
-                    <a href="dist/pdf/素粒子理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">素粒子理論</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">4</div>
-                    <a href="dist/pdf/素粒子実験.pdf" class="text-xxs sm:text-base text-blue-500 underline block">素粒子実験</a>
-                    <a href="dist/pdf/固体電子.pdf" class="text-xxs sm:text-base text-blue-500 underline block">固体電子</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">5</div>
-                    <a href="dist/pdf/複雑物性基礎.pdf" class="text-xxs sm:text-base text-blue-500 underline block">複雑物性</a>
-                    <a href="dist/pdf/粒子系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">粒子系理論</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">6</div>
-                    <a href="dist/pdf/複雑生命.pdf" class="text-xxs sm:text-base text-blue-500 underline block">複雑生命</a>
-                    <a href="dist/pdf/素粒子理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">素粒子理論</a>
-                </div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">12/1</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">2</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">3</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">4</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">5</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">6</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">7</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">8</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">9</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">10</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">11</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">12</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">13</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">14</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">15</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">16</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">17</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">18</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">19</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">20</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">21</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">22</div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">23</div>
 
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">7</div><!-- イベントがある日にはレクのリンク付きでイベント名を表示 -->
-                    <a href="recreation.html" class="text-blue-500 text-xxs sm:text-base underline">ソフトボール</a>
-                </div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">8</div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">9</div>
-                    <a href="dist/pdf/凝縮系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">凝縮系理論</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">10</div>
-                    <a href="dist/pdf/実験核物理.pdf" class="text-xxs sm:text-base text-blue-500 underline block">実験核</a>
-                    <a href="dist/pdf/量子宇宙.pdf" class="text-xxs sm:text-base text-blue-500 underline block">量子宇宙</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">11</div>
-                    <a href="dist/pdf/物性理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">物性理論</a>
-                    <a href="dist/pdf/固体電子.pdf" class="text-xxs sm:text-base text-blue-500 underline block">固体電子</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">12</div>
-                    <a href="dist/pdf/磁性物理学.pdf" class="text-xxs sm:text-base text-blue-500 underline block">磁性物理</a>
-                    <a href="dist/pdf/粒子系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">粒子系理論</a>
-                </div>
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">13</div>
-                    <a href="dist/pdf/量子宇宙.pdf" class="text-xxs sm:text-base text-blue-500 underline block">量子宇宙</a>
-                    <a href="dist/pdf/光物性.pdf" class="text-xxs sm:text-base text-blue-500 underline block">光物性</a>
-                </div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">14</div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">15</div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">16</div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">17</div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">18</div>
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">19</div>
-                
-                <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">20</div>
-                    <a href="recreation.html" class="text-blue-500 text-xxs sm:text-base underline">懇親会</a><!--　<a>タグでリンクを挿入　-->
-                    <a href="" class="text-xxs sm:text-base text-blue-500 underline block">18:30~</div><!-- href""は空リンクで、現在のページを再読み込みする-->
-                </div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div>
+            <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div>
 
-                <!-- 残りの日付を追加 -->
-                <!-- 必要に応じて他の日付もイベント追加 -->
-            </div>
+</div>
         </div>
     </main>
     </div>
