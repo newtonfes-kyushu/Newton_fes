@@ -30,11 +30,11 @@
     </header>
 
     <!-- お知らせ -->
-    <div class="bg-white shadow-lg rounded-lg p-4 mb-6"><!-- bgで背景色、shadowで影、roundedで角丸、pで内側の余白、mbで下の余白 -->
+    <div class="bg-white shadow-lg rounded-lg p-4 mb-6"><!-- bgで背景色、shadowで影、roundedで角丸、pで内側の余白、mbで下の余白 classはキャンバスを作ってる-->
         <h2 class="text-2xl font-bold text-gray-800 mb-4">お知らせ</h2>
-        <ul class="space-y-3"><!-- space-y-3でリストアイテム間に縦のスペースを追加 -->
-            <li class="flex items-start"><!--　flexで青チョボとテキストを横並びに　-->
-                <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-3"></div>
+        <ul class="space-y-3"><!-- space-y-3でリストアイテム間に縦のスペース -->
+            <li class="flex items-start"><!--　flexで各要素<div>を横並びにする。無いと縦になる。　-->
+                <div class="w-2 h-2 bg-blue-500 rounded-full mt-1.5 mr-3"></div><!-- 青チョボ　-->
                 <div>
                     ホームページの更新を行いました。
                 </div>
@@ -120,15 +120,14 @@
             </div>
 
             <!-- カレンダーの日付 -->
-            <div class="grid grid-cols-7 text-center">
-                <!-- 日付が始まる前の空白セル（12月1日が金曜日のため、4つ空白） -->
+            <div class="grid grid-cols-7 text-center"><!-- gridで<div>を格子状に配置する、列数と中央揃えを指定 -->
 
-                <!-- 12月の日付セル -->
-                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div>
+                <!-- 以下日付セル、各研究室のパンフのリンクを貼る -->
+                <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg"></div><!-- p,smは余白の設定、デフォで良し-->
                 <!-- ↑こいつが空白のセル 空白のセルはbg-blue-50、内容が書いてあるセルはbg-yellow-100で背景色変えてください　-->
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">11/25</div>
-                    <a href="dist/pdf/凝縮系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">凝縮系理論</a>
+                    <div class="text-sm sm:text-lg">11/25</div><!-- smは文字のデフォの大きさ、sm:text-lgで画面幅に応じて文字を大きく-->>
+                    <a href="dist/pdf/凝縮系理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">凝縮系理論</a><!--blockで改行-->
                     <a href="dist/pdf/創発量子.pdf" class="text-xxs sm:text-base text-blue-500 underline block">創発量子</a>
                 </div>
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
@@ -180,11 +179,9 @@
                     <a href="dist/pdf/複雑生命.pdf" class="text-xxs sm:text-base text-blue-500 underline block">複雑生命</a>
                     <a href="dist/pdf/素粒子理論.pdf" class="text-xxs sm:text-base text-blue-500 underline block">素粒子理論</a>
                 </div>
-                
 
-                <!-- イベントがある日にはリンク付きでイベント名を表示 -->
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
-                    <div class="text-sm sm:text-lg">7</div>
+                    <div class="text-sm sm:text-lg">7</div><!-- イベントがある日にはレクのリンク付きでイベント名を表示 -->
                     <a href="recreation.html" class="text-blue-500 text-xxs sm:text-base underline">ソフトボール</a>
                 </div>
                 <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">8</div>
@@ -219,7 +216,6 @@
                 <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">18</div>
                 <div class="text-sm sm:text-lg bg-blue-50 p-0.5 sm:p-2 rounded-lg">19</div>
                 
-                <!-- 12月25日のイベント -->
                 <div class="bg-yellow-100 p-0.5 sm:p-2 rounded-lg">
                     <div class="text-sm sm:text-lg">20</div>
                     <a href="recreation.html" class="text-blue-500 text-xxs sm:text-base underline">懇親会</a>
